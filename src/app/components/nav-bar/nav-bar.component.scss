@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@200;300;400;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+.header-container {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: Libre Baskerville, sans-serif;
+    font-style: italic;
+}
+
+.item {
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.item a {
+    text-decoration: none;
+    color: #1c1b20;
+    transition: all .1s;
+}
+
+.item a:hover {
+    border-bottom: 3px solid #1c1b20;
+    color: #1c1b20;
+}

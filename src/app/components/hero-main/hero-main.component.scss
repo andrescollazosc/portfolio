@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+.hero-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    position: relative;
+    &__left-side {
+        background-color: #ff5851;
+        width: 50%;
+        height: 100%;
+    }
+    &__right-side {
+        background-color: #f8f8f8;
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 30px 30px 0;
+    }
+    &__text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #1c1b20;
+        font-family: Roboto Condensed, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.name {
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.professional {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.dot {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    color: #ff5851;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.link-to {
+    padding-right: 3px;
+}
+
+.fa-github:hover {
+    color: #1c1b20;
+}
+
+.fa-linkedin:hover {
+    color: #0a66c2;
+}
+
+.fa-hackerrank:hover {
+    color: #1ba94c;
+}
+
+.icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ff5851;
+    transition: all .3s;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .name {
+        font-size: 45px;
+    }
+    .professional {
+        font-size: 20px;
+    }
+}
