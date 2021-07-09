@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'app/styles/colors';
+@import "app/styles/colors";
 body {
     margin: 0;
     background: $light-gray;
-    height: 500vh;
+    height: 100vh;
+}
+
+.dot {
+    font-weight: 700;
 }

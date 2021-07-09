@@ -1,0 +1,27 @@
+@import '../../styles/typography';
+@import '../../styles/colors';
+.skill-card-container {
+    background: $primary-black;
+    padding: 30px;
+    color: $light-gray;
+    border-radius: 3px;
+    font-family: Nunito, sans-serif;
+    margin-bottom: 15px;
+    &__icon-tech {
+        width: 100%;
+        font-size: 60px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__tech-title {
+        text-transform: capitalize;
+        font-size: 26px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    &__description {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+}
