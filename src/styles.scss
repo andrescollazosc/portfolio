@@ -2,9 +2,9 @@
 
 @import "app/styles/colors";
 body {
-    margin: 0;
     background: $light-gray;
-    height: 100vh;
+    padding: 0;
+    height: auto;
 }
 
 .dot {

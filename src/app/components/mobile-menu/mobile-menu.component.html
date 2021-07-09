@@ -1,0 +1,18 @@
+<nav class="mobile-main-container">
+    <div class="mobile-main-container__menu-icon" (click)="showMenu()">
+        <i [class]="iconClass"></i>
+    </div>
+    <div *ngIf="isShow" class="mobile-main-container__panel-menu">
+        <ul class="tab-items">
+            <li class="item">
+                <a href="">Jobs</a>
+            </li>
+            <li class="item">
+                <a href="">Carrer</a>
+            </li>
+            <li class="item">
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
