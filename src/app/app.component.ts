@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { SkillCardModel } from './models/skill-card.model';
-import { SkillCardMock } from './mocks/skill.card.mock';
-import { ProfileCardModel } from './models/profile-card.model';
-import { ProfileCardMock } from './mocks/profile-card.mock';
+import { MenuModel } from './models/menu.model';
+import { MenuMock } from './mocks/menu.mock';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +10,5 @@ import { ProfileCardMock } from './mocks/profile-card.mock';
 export class AppComponent {
   title = 'app-services-briefcase';
 
-  
-
+  public menuConfig: MenuModel[] = MenuMock.getDataMenu();
 }

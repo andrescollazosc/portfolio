@@ -21,12 +21,19 @@ body {
 }
 
 .fade-in {
-    // display: inline-block;
     animation: fadeIn linear 1s;
     -webkit-animation: fadeIn linear 1s;
     -moz-animation: fadeIn linear 1s;
     -o-animation: fadeIn linear 1s;
     -ms-animation: fadeIn linear 1s;
+}
+
+.fade-out {
+    animation: fadeOut ease 1s;
+    -webkit-animation: fadeOut ease 1s;
+    -moz-animation: fadeOut ease 1s;
+    -o-animation: fadeOut ease 1s;
+    -ms-animation: fadeOut ease 1s;
 }
 
 @keyframes fadeIn {
@@ -35,5 +42,14 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

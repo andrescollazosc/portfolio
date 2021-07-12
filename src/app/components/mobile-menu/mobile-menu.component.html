@@ -2,13 +2,10 @@
     <div class="mobile-main-container__menu-icon" (click)="showMenu()">
         <i [class]="iconClass"></i>
     </div>
-    <div *ngIf="isShow" class="mobile-main-container__panel-menu">
+    <div *ngIf="isShow" class="mobile-main-container__panel-menu fade-in" id="panel-mobile-menu">
         <ul class="tab-items">
-            <li class="item">
-                <a routerLink="">Home</a>
-            </li>
-            <li class="item">
-                <a routerLink="contact">Contact</a>
+            <li *ngFor="let menu of menuConfig" class="item">
+                <a [routerLink]="menu.router">{{ menu.label }}</a>
             </li>
         </ul>
     </div>
