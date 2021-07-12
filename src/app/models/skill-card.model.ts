@@ -5,5 +5,6 @@ export interface SkillCardModel {
 
 export interface SkillCardTextModel {
   title?: string;
+  icons?: string[];
   description?: string;
 }

@@ -1,4 +1,5 @@
 import { SkillCardModel } from '../models/skill-card.model';
+
 export class SkillCardMock {
   public static getConfigurationCard(): SkillCardModel[] {
     return [{
@@ -6,12 +7,13 @@ export class SkillCardMock {
       skillCardTextModel: [
         {
           title: 'Front end',
+          icons: ['fab fa-js', 'fab fa-angular', 'fab fa-react'],
           description:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ab ad. Dolorem, ducimus enim, modi aspernatur eveniet sunt reprehenderit sint asperiores libero reiciendis placeat aut minima fugit id cupiditate nostrum.',
+            'As a front-end developer I have had the opportunity to work for different business sectors in which I have obtained skills in the design and development of SPA applications in different tools.',
         },
         {
           title: 'programming languages and tools',
-          description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium impedit reprehenderit hic possimus, enim voluptatem quia eligendi excepturi iure, adipisci fuga laudantium accusantium ipsam quisquam harum officia fugiat. Libero, eum.F',
+          description: 'In my experience as a front-end developer, I have had the opportunity to work with frameworks like Angular 2+ (typescript), react js and vanilla js in addition to working with style preprocessors like SASS and techniques like BEM.',
         },
       ],
     }, 
@@ -21,11 +23,11 @@ export class SkillCardMock {
           {
             title: 'back end',
             description:
-              'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ab ad. Dolorem, ducimus enim, modi aspernatur eveniet sunt reprehenderit sint asperiores libero reiciendis placeat aut minima fugit id cupiditate nostrum.',
+              'In my experience as a backend developer, I have been able to work for different sectors such as transportation, banking, logistics and other important sectors in which I have gained significant experience, always applying the best development practices.',
           },
           {
             title: 'programming languages and tools',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium impedit reprehenderit hic possimus, enim voluptatem quia eligendi excepturi iure, adipisci fuga laudantium accusantium ipsam quisquam harum officia fugiat. Libero, eum.F',
+            description: 'I have experience in tools like C#, DotNet, DotNet core, Entity Framework and EF core, linq, sql server, mongo and code repositories like github, gitlab and azure devops.',
           },
         ],
       }];
