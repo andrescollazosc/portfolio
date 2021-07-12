@@ -12,7 +12,6 @@ import { ProfileCardMock } from './mocks/profile-card.mock';
 export class AppComponent {
   title = 'app-services-briefcase';
 
-  public skillCardConfig: SkillCardModel[] = SkillCardMock.getConfigurationCard();
-  public profileConfig: ProfileCardModel = ProfileCardMock.getProfile();
+  
 
 }

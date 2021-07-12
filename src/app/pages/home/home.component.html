@@ -1,0 +1,17 @@
+<app-hero-main></app-hero-main>
+
+<div class="sections">
+    <section class="section-container container" id="profile-container">
+        <app-profile-card [profileConfig]="profileConfig"></app-profile-card>
+    </section>
+
+    <section class="section-container container" id="skill-container">
+        <div class="row">
+            <app-skill-card *ngFor="let item of skillCardConfig" [configCard]="item" class="col-12 col-lg-6"></app-skill-card>
+        </div>
+    </section>
+
+    <section class="section-container container" id="carrer-container">
+        Building...
+    </section>
+</div>

@@ -8,6 +8,8 @@ import { DesktopMenuComponent } from './components/desktop-menu/desktop-menu.com
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
     DesktopMenuComponent,
     SkillCardComponent,
     MobileMenuComponent,
-    ProfileCardComponent
+    ProfileCardComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
