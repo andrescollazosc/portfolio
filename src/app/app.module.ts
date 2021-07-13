@@ -10,6 +10,7 @@ import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.compon
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     MobileMenuComponent,
     ProfileCardComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

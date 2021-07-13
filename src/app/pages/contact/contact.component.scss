@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+.title {
+    color: $primary-orange;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.section-contact {
+    padding-bottom: 40px;
+}

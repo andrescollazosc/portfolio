@@ -1,0 +1,74 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+.contact-form-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    ;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    &__personal-data {
+        display: flex;
+        flex-direction: row;
+        padding: 15px 0;
+    }
+    &__input-container {
+        width: 100%;
+    }
+    &__input-container:not(:last-child) {
+        padding-right: 15px;
+        width: 100%;
+    }
+    &__button-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    @media(max-width: 768px) {
+        &__personal-data {
+            flex-direction: column;
+        }
+        &__input-container {
+            margin-top: 20px;
+        }
+        &__input-container:first-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.control-text {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.1s;
+    font-family: Nunito, sans-serif;
+    border-radius: 2px;
+}
+
+.control-text:hover {
+    border-left: 4px solid $primary-orange;
+}
+
+.button {
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-family: Nunito, sans-serif;
+    border: none;
+    cursor: pointer;
+    background: $primary-black;
+    color: $light-gray;
+    transition: all .2s;
+    outline: none;
+}
+
+.button:hover {
+    background: $primary-orange;
+    color: $light-gray;
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenuModel } from 'src/app/models/menu.model';
 
 @Component({
@@ -6,11 +6,8 @@ import { MenuModel } from 'src/app/models/menu.model';
   templateUrl: './desktop-menu.component.html',
   styleUrls: ['./desktop-menu.component.scss']
 })
-export class DesktopMenuComponent implements OnInit {
+export class DesktopMenuComponent {
 
   @Input() menuConfig: MenuModel[] = [];
-
-  ngOnInit(): void {
-  }
 
 }
