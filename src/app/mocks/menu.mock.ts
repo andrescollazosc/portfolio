@@ -5,12 +5,16 @@ export class MenuMock {
         return[
             {
                 router: '',
-                label: 'home'
+                label: 'Home'
+            },
+            {
+                router: 'experience',
+                label: 'My Experience'
             },
             {
                 router: 'contact',
                 label: 'Contact'
-            }
+            }            
         ];
     }
 }
