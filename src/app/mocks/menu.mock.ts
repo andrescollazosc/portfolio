@@ -8,13 +8,17 @@ export class MenuMock {
                 label: 'Home'
             },
             {
-                router: 'experience',
-                label: 'My Experience'
+                router: '#profile-container',
+                label: 'Profile'
             },
             {
-                router: 'contact',
+                router: '',
+                label: 'My Jobs'
+            },
+            {
+                router: '#contact-section',
                 label: 'Contact'
-            }            
+            }
         ];
     }
 }

@@ -1,4 +1,25 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
 .row {
     margin-right: 0;
     margin-left: 0;
+}
+
+.title {
+    color: $primary-orange;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.section-contact {
+    padding-bottom: 40px;
+}
+
+.container-code {
+    color: dodgerblue;
+    background: $primary-black;
+    width: 100%;
+    padding: 10px;
 }

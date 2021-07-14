@@ -5,7 +5,7 @@
     <div *ngIf="isShow" class="mobile-main-container__panel-menu fade-in" id="panel-mobile-menu">
         <ul class="tab-items">
             <li *ngFor="let menu of menuConfig" class="item">
-                <a [routerLink]="menu.router">{{ menu.label }}</a>
+                <a [href]="menu.router">{{ menu.label }}</a>
             </li>
         </ul>
     </div>

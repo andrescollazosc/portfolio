@@ -1,17 +1,17 @@
 @import '../../styles/colors';
 @import '../../styles/typography';
 .mobile-main-container {
-    height: 60px;
+    height: 50px;
     width: 100%;
-    background: $white;
+    background: $primary-blue;
     position: relative;
-    padding: 8px 30px;
+    padding: 4px 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     &__menu-icon {
         font-size: 30px;
-        color: $primary-black;
+        color: $light-gray;
         transition: all .2s;
         cursor: pointer;
     }
@@ -22,8 +22,8 @@
         height: auto;
         width: 60%;
         position: absolute;
-        background: $white;
-        top: 58px;
+        background: $primary-blue;
+        top: 50px;
         right: 0;
         z-index: 1;
         border-bottom-left-radius: 3px;
@@ -43,7 +43,7 @@
 
 .item {
     padding: 3px 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     padding: 0 30px;
 }
@@ -54,7 +54,7 @@
 
 .item a {
     text-decoration: none;
-    color: $primary-black;
+    color: $light-gray;
     transition: all .1s;
 }
 

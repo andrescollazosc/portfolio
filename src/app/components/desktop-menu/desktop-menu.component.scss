@@ -1,12 +1,12 @@
 @import '../../styles/colors';
 @import '../../styles/typography';
 .header-container {
-    height: 60px;
+    height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $white;
+    background: $primary-blue;
 }
 
 .tab-items {
@@ -20,17 +20,17 @@
 
 .item {
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .item a {
     text-decoration: none;
-    color: $primary-black;
+    color: $light-gray;
     transition: all .1s;
 }
 
 .item a:hover {
-    border-bottom: 3px solid $primary-black;
-    color: $primary-black;
+    border-bottom: 3px solid $light-gray;
+    color: $light-gray;
 }

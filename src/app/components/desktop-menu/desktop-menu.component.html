@@ -1,7 +1,7 @@
 <nav class="header-container">
     <ul class="tab-items">
         <li *ngFor="let menu of menuConfig" class="item">
-            <a [routerLink]="menu.router">{{ menu.label }}</a>
+            <a [href]="menu.router">{{ menu.label }}</a>
         </li>
     </ul>
 </nav>
