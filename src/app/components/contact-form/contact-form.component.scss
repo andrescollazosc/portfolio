@@ -60,24 +60,6 @@
     border-left: 4px solid $primary-orange;
 }
 
-.button {
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-family: Nunito, sans-serif;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    background: $primary-black;
-    color: $light-gray;
-    transition: all 0.2s;
-    outline: none;
-}
-
-.button:hover {
-    background: $primary-orange;
-    color: $light-gray;
-}
-
 .icon-response {
     font-size: 100px;
 }
