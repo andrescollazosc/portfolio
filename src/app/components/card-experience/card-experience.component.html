@@ -1,0 +1,17 @@
+<div class="card-experience-container">
+    <div class="company-container" *ngFor="let item of configCard">
+        <div class="first-container">
+            <div class="company-container__image-container">
+                <a [href]="item.urlCompany" target="_blank" class="">
+                    <img [src]="item.pathLogo" [alt]="item.company" />
+                </a>
+            </div>
+        </div>
+        <div class="company-container__text-container">
+            <div class="company-container__title">{{ item.job }}</div>
+            <div class="company-container__date">
+                <span class="company">{{ item.company }} | </span><span class="date">{{ item.date }}</span>
+            </div>
+        </div>
+    </div>
+</div>

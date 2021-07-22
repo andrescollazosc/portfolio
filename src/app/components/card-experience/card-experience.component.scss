@@ -1,0 +1,71 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+.card-experience-container {
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 10%);
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.company-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    &__image-container {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        transition: all .4s;
+    }
+    &__image-container:hover {
+        filter: brightness(80%);
+    }
+    &__image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    &__text-container {
+        width: 100%;
+        padding: 0 10px;
+        font-family: Nunito, sans-serif;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $black-hr;
+    }
+    &__date {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    @media (max-width: 768px) {
+        &__image-container {
+            margin-bottom: 10px;
+        }
+        &__text-container {
+            padding: 0;
+        }
+    }
+}
+
+.company {
+    color: $black-hr;
+}
+
+.date {
+    color: $gray-hr;
+}
+
+.first-container {
+    width: 10%;
+}
+
+@media(max-width: 768px) {
+    .company-container {
+        flex-direction: column;
+    }
+}

@@ -3,9 +3,6 @@
 
 <app-hero-main></app-hero-main>
 
-<!-- <router-outlet>
-</router-outlet> -->
-
 <div class="sections fade-in">
     <section class="profile-container container" id="profile-container">
         <app-profile-card [profileConfig]="profileConfig"></app-profile-card>
@@ -15,18 +12,13 @@
         </div>
     </section>
 
-    <!-- <section class="skill-container container" id="skill-container">
-        <div class="row">
-            <app-skill-card *ngFor="let item of skillCardConfig" [configCard]="item" class="col-12 col-lg-6"></app-skill-card>
-        </div>
-    </section> -->
+    <section class="section-container container" id="experience-container">
+        <app-card-experience [configCard]="experienceConfig" class="card-experience-container"></app-card-experience>
+    </section>
 
     <section class="container section-contact section-container" id="contact-section">
         <div class="title">Contact me.</div>
         <app-contact-form></app-contact-form>
     </section>
 
-    <section class="section-container container" id="carrer-container">
-        Building...
-    </section>
 </div>

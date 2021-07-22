@@ -51,6 +51,10 @@
     border-radius: 2px;
 }
 
+.message-text {
+    height: 250px;
+}
+
 .control-text:hover,
 :focus {
     border-left: 4px solid $primary-orange;

@@ -11,6 +11,7 @@ import { ProfileCardComponent } from './components/profile-card/profile-card.com
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { CardExperienceComponent } from './components/card-experience/card-experience.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     ProfileCardComponent,
     HomeComponent,
     ContactComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    CardExperienceComponent
   ],
   imports: [
     BrowserModule,

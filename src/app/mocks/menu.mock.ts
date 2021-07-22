@@ -4,16 +4,12 @@ export class MenuMock {
     public static getDataMenu(): MenuModel[]{
         return[
             {
-                router: '',
-                label: 'Home'
-            },
-            {
                 router: '#profile-container',
                 label: 'Profile'
             },
             {
-                router: '',
-                label: 'My Jobs'
+                router: '#experience-container',
+                label: 'Work Experience'
             },
             {
                 router: '#contact-section',
