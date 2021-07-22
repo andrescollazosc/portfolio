@@ -4,7 +4,7 @@
 <app-hero-main></app-hero-main>
 
 <div class="sections fade-in">
-    <section class="profile-container container" id="profile-container">
+    <section class="profile-container container" id="profile">
         <app-profile-card [profileConfig]="profileConfig"></app-profile-card>
 
         <div class="row">
@@ -12,11 +12,11 @@
         </div>
     </section>
 
-    <section class="section-container container" id="experience-container">
+    <section class="section-container container" id="experience">
         <app-card-experience [configCard]="experienceConfig" class="card-experience-container"></app-card-experience>
     </section>
 
-    <section class="container section-contact section-container" id="contact-section">
+    <section class="container section-contact section-container" id="contact">
         <div class="title">Contact me.</div>
         <app-contact-form></app-contact-form>
     </section>
