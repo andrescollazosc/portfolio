@@ -18,6 +18,11 @@ export class ContactInfoMock {
                 icon: 'fas fa-phone-square',
                 label: 'Phone',
                 descripcion: '3012544562'
+            },
+            {
+                icon: 'fas fa-map-marker-alt',
+                label: 'Location',
+                descripcion: 'Bogota D.C. Colombia'
             }
         ];
     }
