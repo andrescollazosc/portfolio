@@ -12,6 +12,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { CardExperienceComponent } from './components/card-experience/card-experience.component';
+import { ContactInformationComponent } from './components/contact-information/contact-information.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { CardExperienceComponent } from './components/card-experience/card-exper
     HomeComponent,
     ContactComponent,
     ContactFormComponent,
-    CardExperienceComponent
+    CardExperienceComponent,
+    ContactInformationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

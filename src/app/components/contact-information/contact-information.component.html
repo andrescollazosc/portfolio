@@ -1,0 +1,11 @@
+<div class="contact-info-container">
+    <div class="info-container" *ngFor="let item of configContact">
+        <div class="icon">
+            <i [class]="item.icon"></i>
+        </div>
+        <div class="information">
+            <label for="" class="label">{{ item.label }}</label>
+            <div class="description">{{ item.descripcion }}</div>
+        </div>
+    </div>
+</div>

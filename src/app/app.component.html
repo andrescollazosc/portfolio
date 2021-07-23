@@ -18,7 +18,18 @@
 
     <section class="container section-contact section-container" id="contact">
         <div class="title">Contact me.</div>
-        <app-contact-form></app-contact-form>
+        <div class="contact-container">
+            <div class="contact-information">
+                <div class="sub-title">Get in Touch</div>
+                <app-contact-information [configContact]="configContact"></app-contact-information>
+            </div>
+            <div class="contact-information">
+                <div class="sub-title">Message me</div>
+                <app-contact-form></app-contact-form>
+            </div>
+        </div>
     </section>
-
 </div>
+
+
+<app-footer></app-footer>

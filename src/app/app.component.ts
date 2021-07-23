@@ -7,6 +7,8 @@ import { ProfileCardMock } from './mocks/profile-card.mock';
 import { SkillCardMock } from './mocks/skill.card.mock';
 import { CardExperienceModel } from './models/card-experience.model';
 import { CardExperienceMock } from './mocks/card-experience.mock';
+import { ContactInfoModel } from './models/contact-info.model';
+import { ContactInfoMock } from './mocks/contact-info.mock';
 
 @Component({
   selector: 'app-root',
@@ -20,4 +22,5 @@ export class AppComponent {
   public skillCardConfig: SkillCardModel[] = SkillCardMock.getConfigurationCard();
   public profileConfig: ProfileCardModel = ProfileCardMock.getProfile();
   public experienceConfig: CardExperienceModel[] = CardExperienceMock.getExperienceData();
+  public configContact: ContactInfoModel[] = ContactInfoMock.getContactInfo();
 }

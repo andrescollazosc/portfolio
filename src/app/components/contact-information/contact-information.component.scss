@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+@import '../../styles/typography';
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.information {
+    font-family: Poppins, sans-serif;
+    color: $primary-black;
+}
+
+.icon {
+    font-size: 36px;
+    padding-right: 10px;
+    color: $primary-orange;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 400;
+}
