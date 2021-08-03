@@ -1,10 +1,7 @@
 import { ProfileCardModel } from "../models/profile-card.model";
 
 export class ProfileCardMock {
-    
-    /**
-     * getProfile
- : ProfileCardModel    */
+        
     public static getProfile(): ProfileCardModel {
         return {
             title: 'Hi, I am Andres Collazos, Nice to meet you',
