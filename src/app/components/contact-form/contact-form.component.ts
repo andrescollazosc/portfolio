@@ -12,6 +12,7 @@ import { finalize } from 'rxjs/operators';
 })
 export class ContactFormComponent implements OnInit {
   public status: ContactFormEnum = ContactFormEnum.initial;
+  public messageModel: MessageModel = {};
   public form: FormGroup = this.formBuilder.group({
     name: [''],
     email: [''],
@@ -57,10 +58,12 @@ export class ContactFormComponent implements OnInit {
 
     this.portfolioService.addMessage(message)
     .pipe(finalize(() => {
-      this.status = ContactFormEnum.success;
+      if (this.messageModel) {
+        this.status = ContactFormEnum.success;        
+      }
     }))
     .subscribe(response => {
-      console.log(response.name);      
+      this.messageModel = response;
     });
   }
 

@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   private getIp(): void {
     this.ipService.getIPAddress()
     .pipe(finalize(() => {
-      // this.createVisit(this.ipModel);  
+      this.createVisit(this.ipModel);
     }))
     .subscribe(result => {
       this.ipModel = result;
