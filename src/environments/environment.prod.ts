@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true, 
+  urlBase: 'https://apiportfolioservicesapi20210818143745.azurewebsites.net/api/'
 };
