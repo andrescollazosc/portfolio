@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   private getIp(): void {
     this.ipService.getIPAddress()
     .pipe(finalize(() => {
-      this.createVisit(this.ipModel);  
+      // this.createVisit(this.ipModel);  
     }))
     .subscribe(result => {
       this.ipModel = result;
@@ -49,6 +49,8 @@ export class AppComponent implements OnInit {
   }
 
   private createVisit(visit: VisitModel): void {
+    visit.ownerMessage = 'ACC';
+
     this.portfolioService.addVisit(visit)
     .pipe(finalize(() => {
       if (this.visit) {

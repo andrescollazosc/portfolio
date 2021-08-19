@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment.prod';
 import { PortfolioContants } from '../constants/url.constant';
 import { Observable } from 'rxjs';
 import { VisitModel } from '../models/visit.model';
+import { MessageModel } from '../models/message.model';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +17,11 @@ export class PortfolioService {
   constructor(private http: HttpClient) { }
 
   public addVisit(visit: VisitModel): Observable<VisitModel> {
-    return this.http.post(`${ this.API_VISIT }${ PortfolioContants.RESOURCES.MESSAGE.END_POINTS.ADD }`, visit);
+    return this.http.post(`${ this.API_VISIT }${ PortfolioContants.RESOURCES.VISIT.END_POINTS.ADD }`, visit);
+  }
+
+  public addMessage(message: MessageModel): Observable<MessageModel> {
+    return this.http.post(`${ this.API_MESSAGE }${ PortfolioContants.RESOURCES.MESSAGE.END_POINTS.ADD }`, message);
   }
 
 }

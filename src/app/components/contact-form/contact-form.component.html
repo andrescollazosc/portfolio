@@ -1,23 +1,29 @@
 <div class="contact-form-main-container">
-    <div *ngIf="status === 0" class="contact-form-container">
-        <div class="contact-form-container__personal-data">
-            <div class="contact-form-container__input-container">
-                <input type="text" placeholder="Name" class="control-text">
+    <form action="" [formGroup]="form" (ngSubmit)="saveMessage()">
+        <div *ngIf="status === 0" class="contact-form-container">
+            <div class="contact-form-container__personal-data">
+                <div class="contact-form-container__input-container">
+                    <input type="text" placeholder="Name" formControlName="name" class="control-text" />
+                    <small class="danger-message" *ngIf="nameNoValidated">Please, Enter at least 5 letters</small>
+                </div>
+                <div class="contact-form-container__input-container">
+                    <input type="email" placeholder="Email" formControlName="email" class="control-text" />
+                    <small class="danger-message" *ngIf="emailNoValidated">
+                        Please, Enter your email.
+                    </small>
+                </div>
             </div>
-            <div class="contact-form-container__input-container">
-                <input type="email" placeholder="Email" class="control-text">
+            <div class="message">
+                <textarea formControlName="message" class="control-text message-text" placeholder="Message"></textarea>
+                <small class="danger-message" *ngIf="messageNoValidated">
+                    Please, Enter at least 15 letters.
+                </small>
+            </div>
+            <div class="contact-form-container__button-container">
+                <button class="button">Submit</button>
             </div>
         </div>
-        <div class="message">
-            <textarea class="control-text message-text" placeholder="Message"></textarea>
-        </div>
-        <div class="contact-form-container__button-container">
-            <button class="button" (click)="sendData()">
-                Submit
-            </button>
-        </div>
-    </div>
-
+    </form>
 
     <div *ngIf="status === 1" class="icon-response">
         <i class="fas fa-circle-notch fa-spin"></i>
