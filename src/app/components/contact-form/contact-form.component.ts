@@ -53,8 +53,7 @@ export class ContactFormComponent implements OnInit {
 
   private createMessage(message: MessageModel): void {
     this.status = ContactFormEnum.processing;
-
-    debugger
+    
     this.portfolioService.addMessage(message)
     .pipe(finalize(() => {
       if (this.messageModel) {
@@ -66,7 +65,6 @@ export class ContactFormComponent implements OnInit {
     .subscribe(response => {
       this.messageModel = response;
     }, error => {
-      debugger
       this.status = ContactFormEnum.error;
     });
   }

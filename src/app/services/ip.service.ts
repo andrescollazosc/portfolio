@@ -11,7 +11,7 @@ export class IpService {
   constructor(private http: HttpClient) { }
 
   public getIPAddress(): Observable<VisitModel> {  
-    return this.http.get<VisitModel>("http://api.ipify.org/?format=json");  
+    return this.http.get<VisitModel>("https://api.ipify.org/?format=json");  
   }  
 
 }
