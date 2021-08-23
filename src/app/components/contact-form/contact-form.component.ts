@@ -60,10 +60,14 @@ export class ContactFormComponent implements OnInit {
     .pipe(finalize(() => {
       if (this.messageModel) {
         this.status = ContactFormEnum.success;        
+      } else {
+        this.status = ContactFormEnum.error;
       }
     }))
     .subscribe(response => {
       this.messageModel = response;
+    }, error => {
+      this.status = ContactFormEnum.error;
     });
   }
 
