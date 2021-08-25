@@ -4,6 +4,7 @@ import { SkillCardComponent } from './skill-card.component';
 
 describe('SkillCardComponent', () => {
   let component: SkillCardComponent;
+  let componentPrivate: any;
   let fixture: ComponentFixture<SkillCardComponent>;
 
   beforeEach(async () => {
@@ -16,10 +17,23 @@ describe('SkillCardComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SkillCardComponent);
     component = fixture.componentInstance;
+    componentPrivate = <any> component;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  
+  describe('When ngOnInit is invoked', () => {
+    beforeEach(() => {
+      spyOn(componentPrivate, 'initializeData');
+    });
+
+    it('Should call initializeData', () => {
+      component.ngOnInit();
+
+      expect(componentPrivate.initializeData).toHaveBeenCalledWith();
+      expect(component.configCard.icon).toBe('fa-window-maximize far');
+    });
   });
+  
+  
 });

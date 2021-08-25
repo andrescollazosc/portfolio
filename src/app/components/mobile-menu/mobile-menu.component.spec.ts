@@ -19,7 +19,27 @@ describe('MobileMenuComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  describe('When showMenu is invoked', () => {
+    it('Should isShow be different from itself.', () => {
+      const isShow = component.isShow;
+      component.showMenu();
+
+      expect(component.isShow).toBe(!isShow);
+    });
+
+    it('When isShow is false iconClass must be will get [fas fa-bars] css class', () => {
+      component.isShow = true;
+      component.showMenu();
+
+      expect(component.iconClass).toBe('fas fa-bars');
+    });
+
+    it('When isShow is true iconClass must be will get [fas fa-times] css class', () => {
+      component.isShow = true;
+      component.showMenu();
+
+      expect(component.iconClass).toBe('fas fa-bars');
+    });
   });
+  
 });

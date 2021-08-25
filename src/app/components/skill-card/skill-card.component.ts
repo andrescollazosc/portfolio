@@ -11,8 +11,14 @@ export class SkillCardComponent implements OnInit {
   @Input() configCard: SkillCardModel={};
 
   ngOnInit(): void {
-    if (!this.configCard) {
-      throw new Error("The property [configCard] is required.");      
+    this.initializeData();
+  }
+
+  private initializeData(): void {
+    if (!this.configCard.icon) {
+      this.configCard = {
+        icon: 'fa-window-maximize far',
+      };
     }
   }
 

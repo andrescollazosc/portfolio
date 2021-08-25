@@ -4,14 +4,12 @@ import { VisitModel } from '../models/visit.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class IpService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  public getIPAddress(): Observable<VisitModel> {  
-    return this.http.get<VisitModel>("https://api.ipify.org/?format=json");  
-  }  
-
+  public getIPAddress(): Observable<VisitModel> {
+    return this.http.get<VisitModel>('https://api.ipify.org/?format=json');
+  }
 }

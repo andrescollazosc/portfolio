@@ -11,8 +11,14 @@ export class CardExperienceComponent implements OnInit {
   @Input() configCard: CardExperienceModel[] = [];
 
   ngOnInit(): void {
+    this.initializeData();
+  }
+
+  private initializeData(): void {
     if (this.configCard.length == 0) {
-      throw new Error("The property [configCard] is required.");
+      this.configCard = [{
+        job: 'test job'
+      }];
     }
   }
 

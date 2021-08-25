@@ -17,7 +17,7 @@ export class ContactInfoMock {
             {
                 icon: 'fas fa-phone-square',
                 label: 'Phone',
-                descripcion: '+57 3015527605'
+                descripcion: '+57 3014397792'
             },
             {
                 icon: 'fas fa-map-marker-alt',

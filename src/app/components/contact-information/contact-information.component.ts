@@ -10,7 +10,15 @@ export class ContactInformationComponent implements OnInit {
 
   @Input() configContact: ContactInfoModel[] = [];
 
-  ngOnInit(): void {
+  ngOnInit() : void {
+    this.initializeData();
   }
 
+  private initializeData(): void {
+    if (this.configContact.length == 0) {
+      this.configContact = [{
+        label: 'test'
+      }];
+    }
+  }
 }

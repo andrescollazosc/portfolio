@@ -20,6 +20,8 @@ import { PortfolioService } from './services/portfolio.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  public title = '';
+
   public menuConfig: MenuModel[] = MenuMock.getDataMenu();
   public skillCardConfig: SkillCardModel[] =
     SkillCardMock.getConfigurationCard();

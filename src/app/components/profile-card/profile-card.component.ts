@@ -4,16 +4,21 @@ import { ProfileCardModel } from 'src/app/models/profile-card.model';
 @Component({
   selector: 'app-profile-card',
   templateUrl: './profile-card.component.html',
-  styleUrls: ['./profile-card.component.scss']
+  styleUrls: ['./profile-card.component.scss'],
 })
 export class ProfileCardComponent implements OnInit {
-
   @Input() profileConfig: ProfileCardModel = {};
 
   ngOnInit(): void {
-    if (!this.profileConfig) {
-      throw new Error("The property [profileConfig] is required.");      
-    }
+    this.initializeData();
   }
 
+  private initializeData(): void {
+    if (!this.profileConfig.title) {
+      this.profileConfig = {
+        title: 'Title here',
+        description: 'Lorem...'
+      };
+    }
+  }
 }
